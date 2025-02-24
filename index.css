@@ -1,0 +1,100 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+:root {
+    --ubuntu: 'Ubuntu', sans-serif;
+    --bold: 700;
+    --normal: 400px;
+  }
+
+.hide {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 3.125rem;
+    background-color: #9564AA;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.0625rem 1.6875rem;
+}
+
+.burger {
+    width:1.4375rem;
+    height: 0.875rem;
+}
+
+.diamond {
+    width: 1.125rem;
+    height: 0.938rem;
+}
+
+.first-section__title {
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    font-size: 1.25rem;
+    padding: 0.9375rem 1.25rem 0.625rem; 
+    border-bottom: 2px solid #F7F3F8;
+}
+
+.first-section_button {
+    display: block;
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    font-size: 1rem;
+    width: 17.5rem;
+    height: 3.4375rem;
+    background: #FFCF2D;
+    border-radius: 0.625rem;
+    border: 0px;
+    margin: 0.9375rem   1.25rem;
+}
+
+.policy-text {
+    font-family: var(--ubuntu);
+    font-weight: var(--normsl);
+    font-size: 0.625rem;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.25rem;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 1.25rem; 
+    height: 1.25rem; 
+    background-color: #eee; 
+    border-radius: 0.3125rem; 
+    position: relative;
+    margin-right: 0.625rem;
+}
+
+.policy input:checked + .custom-checkbox {
+    background-color: #9564AA;
+}
+
+/* Создаем галочку на проверенном чекбоксе */
+.custom-checkbox::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.policy input:checked + .custom-checkbox::after {
+    display: block; /* Показ галочки при активном состоянии */
+}
