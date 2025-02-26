@@ -1,0 +1,218 @@
+@media (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+
+  .diamond-mobile {
+    display: none;
+  }
+
+  .diamond-desktop {
+    width: 1.125rem;
+    height: 0.938rem;
+    padding-left: 10px;
+  }
+
+  .header {
+    height: 100px;
+    /* padding: 0 375px; */
+  }
+
+  .header-content {
+    max-width: 930px;
+    min-width: 320px;
+    width: 930px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    display: inline-block;
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    color: #fff;
+    font-size: 48px;
+  }
+
+  /* .wrapper {
+    max-width: 930px;
+    padding: 0px auto;
+  } */
+
+  /* .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menu-point {
+    display: inline-block;
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .menu-point_premium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 30px;
+    padding: 3px 7px;
+    background-color: #684677;
+    color: #ffcf2d;
+    border-radius: 10px;
+  }
+
+  .main {
+    margin-top: 30px;
+  }
+
+  .main-wrapper {
+    max-width: 930px;
+    min-width: 320px;
+    /* width: 930px; */
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    background-color: #f4f0f7;
+    border-radius: 10px;
+    border: 2px solid #e1d4e8;
+  }
+
+  .sidebar__account-info {
+    display: flex;
+    margin: 20px;
+    border-bottom: 2px solid #9564aa;
+    padding-bottom: 20px;
+  }
+
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+
+  .main-content {
+    width: 71%;
+  }
+
+  .user__name {
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  .user__get-premium {
+    font-family: var(--ubuntu);
+    font-weight: var(--normal);
+    font-size: 12px;
+    color: #fff;
+    /* width: 86px; */
+    background-color: #684677;
+    border-radius: 5px;
+    padding: 5px 8px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sidebar_menu-icons-list {
+    font-size: 0.75rem;
+    color: #000;
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    padding-left: 1.3125rem;
+  }
+
+  .sidebar_menu-icons-list > li {
+    display: flex;
+    align-items: center;
+    background: url("images/male.png") no-repeat left center;
+    padding-left: 2.375rem;
+    height: 2.375rem;
+  }
+
+  .sidebar_menu-icons-list > li:nth-child(1) {
+    background-image: url("images/icon-user.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(2) {
+    background-image: url("images/icon-photo.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(3) {
+    background-image: url("images/icon-messages.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(4) {
+    background-image: url("images/icon-favorites.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(5) {
+    background-image: url("images/icon-guests.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(6) {
+    background-image: url("images/icon-setting.png");
+  }
+  .sidebar_menu-icons-list > li:nth-child(7) {
+    background-image: url("images/icon-exit.png");
+  }
+
+  .first-section__title {
+    font-size: 40px;
+  }
+
+  .sale {
+    width: 96%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #c15ca1;
+    border-radius: 10px;
+  }
+
+  .sale__title {
+    font-size: 40px;
+    color: #ffcf2d;
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .sale__text {
+    font-family: var(--ubuntu);
+    font-weight: var(--bold);
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .sale__timer {
+    font-family: var(--ubuntu);
+    font-weight: var(--normal);
+    font-size: 10px;
+    padding: 5px 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .slider-circles {
+    display: none;
+  }
+
+  .first-section_button {
+    display: none;
+  }
+}

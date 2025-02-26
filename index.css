@@ -28,14 +28,20 @@
   padding: 1.0625rem 1.6875rem;
 }
 
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .burger {
   width: 1.4375rem;
   height: 0.875rem;
 }
 
-.diamond {
-  width: 1.125rem;
-  height: 0.938rem;
+.diamond-mobile {
+  width: 25px;
+  height: 20px;
 }
 
 .first-section__title {
@@ -44,7 +50,7 @@
   font-size: 1.25rem;
   margin: 0.9375rem 1.25rem 0.625rem;
   padding-bottom: 0.625rem;
-  border-bottom: 2px solid #EAE0EE;
+  border-bottom: 2px solid #eae0ee;
 }
 
 .first-section_button {
@@ -137,12 +143,12 @@
 }
 
 .offer {
-    font-size: 0.875rem;
-    color: #000000;
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    background-color: #FFCF2D;
-    font-family: var(--ubuntu);
+  font-size: 0.875rem;
+  color: #000000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background-color: #ffcf2d;
+  font-family: var(--ubuntu);
   font-weight: var(--bold);
   text-align: center;
   position: absolute;
@@ -165,22 +171,22 @@
 }
 
 .slider-circles {
-    display: flex;
-    justify-content: center;
-    gap: 0.625rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
 }
 
 .circle {
-    width: 0.625rem;
-    height: 0.625rem;
-    border-radius: 50%;
-    background-color: #FFC500;
-    transition: transform 0.3s, background-color 0.3s;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: #ffc500;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .circle-active {
-    transform: scale(1.2);
-    background-color:  orange;
+  transform: scale(1.2);
+  background-color: orange;
 }
 
 /* ////////////ВТОРОЙ БЛОК////////////// */
@@ -196,8 +202,6 @@
 }
 
 .second-section__list {
-  display: flex;
-  flex-direction: column;
   font-size: 0.75rem;
   color: var(--purple);
   font-family: var(--ubuntu);

@@ -5,60 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdCombo TZt</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./desktop.css" />
   </head>
   <body>
     <header class="header">
-      <img src="./images/burger.png" alt="burger-logo" class="burger" />
-      <img src="./images/diamond.png" alt="logo" class="diamond" />
+      <div class="header-content">
+        <span class="header-logo hide">Logo</span>
+        <img src="./images/burger.png" alt="burger-logo" class="burger" />
+        <img src="./images/diamond.png" alt="logo" class="diamond-mobile" />
+        <div class="menu-list hide">
+          <span class="menu-point hide">People nearby</span>
+          <span class="menu-point hide">Search</span>
+          <span class="menu-point menu-point_premium hide">
+            Premium
+            <img
+              src="./images/diamond.png"
+              alt="logo"
+              class="diamond-desktop"
+            />
+          </span>
+        </div>
+      </div>
     </header>
-    <main>
-      <section class="first-section">
-        <aside class="hide"></aside>
-        <h1 class="first-section__title">Закончились кредиты?</h1>
-        <div class="sale hide"></div>
-        <div class="slider">
-          <div class="buy"> <span class="offer">One time offer!</span> 50 <span class="credit">CR</span>/$5</div>
-          <div class="buy">150 <span class="credit">CR</span>/17</div>
-          <div class="buy">300 <span class="credit">CR</span>/35</div>
-          <div class="buy">500 <span class="credit">CR</span>/$55</div>
-          <div class="buy">1000 <span class="credit">CR</span>/$105</div>
-          <div class="buy">1000 <span class="credit">CR</span>/$105</div>
+    <main class="main">
+      <div class="main-wrapper">
+        <aside class="sidebar hide">
+          <div class="sidebar__account-info">
+            <img src="images/user.png" alt="" class="account-photo" />
+            <div class="account-info">
+              <span class="user__name">Maxim Knyazkin</span>
+              <span class="user__get-premium">Get Premium</span>
+            </div>
+          </div>
+          <div class="sidebar__menu-icons">
+            <ul class="sidebar_menu-icons-list">
+              <li>Profile</li>
+              <li>My photos</li>
+              <li>Messages</li>
+              <li>Favorites</li>
+              <li>Guests</li>
+              <li>Setting</li>
+              <li>Log out</li>
+            </ul>
+          </div>
+        </aside>
+        <div class="main-content">
+          <section class="first-section">
+            <h1 class="first-section__title">Закончились кредиты?</h1>
+            <div class="sale hide">
+              <span class="sale__title">Скидка 40%</span>
+              <span class="sale__text">Предложение действует в течение</span>
+              <span id="sale-timer" class="sale__timer">10 : 00 : 00</span>
+            </div>
+            <div class="slider">
+              <div class="buy">
+                <span class="offer">One time offer!</span> 50
+                <span class="credit">CR</span>/$5
+              </div>
+              <div class="buy">150 <span class="credit">CR</span>/17</div>
+              <div class="buy">300 <span class="credit">CR</span>/35</div>
+              <div class="buy">500 <span class="credit">CR</span>/$55</div>
+              <div class="buy">1000 <span class="credit">CR</span>/$105</div>
+              <div class="buy">1000 <span class="credit">CR</span>/$105</div>
+            </div>
+            <div class="slider-circles" id="slider-circles">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+            <button class="first-section_button">Try now</button>
+            <label for="policy" class="policy">
+              <input type="checkbox" id="policy" class="hide" />
+              <span class="custom-checkbox"></span>
+              <p class="policy-text">
+                By clicking Checkbox you agree and accept our
+                <span class="purple">Privacy Policy</span>, and
+                <span class="purple">Terms of use</span>
+              </p>
+            </label>
+          </section>
+          <section class="second-section">
+            <picture>
+              <img
+                src="images/diamond.png"
+                alt="diamond_logo"
+                class="second-section__logo"
+              />
+            </picture>
+            <ul class="second-section__list">
+              <li>Отправлять сообщения</li>
+              <li>Просматривать скрытые фото</li>
+              <li>Оплачивать подарки</li>
+              <li>Пользоваться другими премиум функциями</li>
+            </ul>
+          </section>
         </div>
-        <div class="slider-circles" id="slider-circles">
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-        </div>
-        <button class="first-section_button">Try now</button>
-        <label for="policy" class="policy">
-          <input type="checkbox" id="policy" class="hide" />
-          <span class="custom-checkbox"></span>
-          <p class="policy-text">
-            By clicking Checkbox you agree and accept our
-            <span class="purple">Privacy Policy</span>, and
-            <span class="purple">Terms of use</span>
-          </p>
-        </label>
-      </section>
-
-      <section class="second-section">
-        <picture>
-          <img
-            src="images/diamond.png"
-            alt="diamond_logo"
-            class="second-section__logo"
-          />
-        </picture>
-        <ul class="second-section__list">
-          <li >Отправлять сообщения</li>
-          <li>Просматривать скрытые фото</li>
-          <li>Оплачивать подарки</li>
-          <li>Пользоваться другими премиум функциями</li>
-        </ul>
-      </section>
+      </div>
     </main>
     <script src="index.js"></script>
   </body>
