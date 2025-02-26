@@ -170,6 +170,11 @@
   margin: 0 0.5rem;
 }
 
+.credit-price {
+  display: flex;
+  align-items: center;
+}
+
 .slider-circles {
   display: flex;
   justify-content: center;

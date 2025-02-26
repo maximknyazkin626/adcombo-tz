@@ -15,13 +15,11 @@
 
   .header {
     height: 100px;
-    /* padding: 0 375px; */
   }
 
   .header-content {
-    max-width: 930px;
+    max-width: 1170px;
     min-width: 320px;
-    width: 930px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -34,17 +32,6 @@
     color: #fff;
     font-size: 48px;
   }
-
-  /* .wrapper {
-    max-width: 930px;
-    padding: 0px auto;
-  } */
-
-  /* .header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
 
   .menu-list {
     display: flex;
@@ -77,7 +64,7 @@
   }
 
   .main-wrapper {
-    max-width: 930px;
+    max-width: 1170px;
     min-width: 320px;
     /* width: 930px; */
     margin: 0 auto;
@@ -146,6 +133,10 @@
     height: 2.375rem;
   }
 
+  .sidebar_menu-icons-list > li:hover {
+    color: #65307c;
+  }
+
   .sidebar_menu-icons-list > li:nth-child(1) {
     background-image: url("images/icon-user.png");
   }
@@ -173,7 +164,6 @@
   }
 
   .sale {
-    width: 96%;
     height: 82px;
     display: flex;
     align-items: center;
@@ -181,6 +171,9 @@
     margin: 0 auto;
     background-color: #c15ca1;
     border-radius: 10px;
+    margin: 0.9375rem 1.25rem 0.625rem;
+    padding: 12px 10px;
+    gap: 30px;
   }
 
   .sale__title {
@@ -194,14 +187,16 @@
   .sale__text {
     font-family: var(--ubuntu);
     font-weight: var(--bold);
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
   }
 
   .sale__timer {
+    max-width: 238px;
+    max-height: 56px;
     font-family: var(--ubuntu);
     font-weight: var(--normal);
-    font-size: 10px;
+    font-size: 40px;
     padding: 5px 20px;
     color: #000;
     background-color: #fff;
@@ -213,6 +208,64 @@
   }
 
   .first-section_button {
+    display: none;
+  }
+
+  .slider {
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+  }
+
+  .buy {
+    width: 150px;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+    flex: 1 1 auto;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0.9375rem 1.25rem 0.625rem;
+    background-color: #F5F0F7;
+    border: 2px solid #9564AA;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding-right: 0;
+  }
+
+  .offer {
+    display: none;
+  }
+
+  .buy-now {
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    padding: 17px 28px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #D2D2D2;
+  }
+
+  /* .buy:hover{
+    background-color: #9564AA;
+  } */
+
+  /* .buy:hover ~ .buy-now{
+    background-color: #ffcf2d;
+    color: #000;
+  } */
+
+  .credit-price {
+    display: flex;
+
+  }
+
+  .price {
     display: none;
   }
 }
