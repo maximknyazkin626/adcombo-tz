@@ -177,7 +177,7 @@
   }
 
   .sale__title {
-    font-size: 40px;
+    font-size: 38px;
     color: #ffcf2d;
     font-family: var(--ubuntu);
     font-weight: var(--bold);
@@ -268,4 +268,59 @@
   .price {
     display: none;
   }
+
+  .policy-text {
+    font-size: 13px;
+  }
+
+  .second-section__list {
+    position: absolute;
+    top: 89%;
+    left: 58%;
+    transform: translate(-50%, -48%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-section__logo {
+    width: 129px;
+    height: auto;
+    position: relative;
+    margin-top: 80px;
+  }
+
+  .second-section__list > li {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-section__list > li:nth-child(1) {
+    transform: translate(130px, -140px);
+  }
+  .second-section__list > li:nth-child(2) {
+    transform: translate(220px, -50px);
+  }
+  .second-section__list > li:nth-child(3) {
+    transform: translate(130px, 40px);
+  }
+  .second-section__list > li:nth-child(4) {
+    transform: translate(-110px, 40px);
+  }
+
+  .second-section__list > li:nth-child(5) {
+    display: block;
+    transform: translate(-200px, -50px);
+  }
+  
+  .second-section__list > li:nth-child(6) {
+    display: block;
+    transform: translate(-110px, -140px);
+  }
+  
+  
 }

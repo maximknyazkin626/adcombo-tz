@@ -4,7 +4,7 @@
 }
 
 :root {
-  --ubuntu: "Ubuntu", sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
   --bold: 700;
   --normal: 400px;
   --purple: #9564aa;
@@ -235,4 +235,14 @@
 
 .second-section__list > li:nth-child(4) {
   background-image: url("images/heart.png");
+}
+
+.second-section__list > li:nth-child(5) {
+  display: none;
+  background-image: url("images/male.png");
+}
+
+.second-section__list > li:nth-child(6) {
+  display: none;
+  background-image: url("images/gift.png");
 }
