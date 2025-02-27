@@ -64,7 +64,17 @@
   }
 
   .main {
-    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .main-background {
+    width: 100%;
+    height: auto;
+    background-image: url("/images/bubble-left.png"),
+      url("/images/bubble-right.png");
+    background-size: 50% 100%;
+    background-position: left top, right top;
+    background-repeat: no-repeat;
   }
 
   .main-wrapper {
@@ -79,9 +89,11 @@
     display: flex;
     flex-direction: column;
     width: 29%;
+    height: auto;
     background-color: #f4f0f7;
     border-radius: 10px;
     border: 2px solid #e1d4e8;
+    overflow: hidden;
   }
 
   .sidebar__account-info {
@@ -178,6 +190,7 @@
     margin: 0.9375rem 1.25rem 0.625rem;
     padding: 12px 10px;
     gap: 30px;
+    overflow: hidden;
   }
 
   .sale__title {
@@ -257,15 +270,6 @@
     color: #d2d2d2;
   }
 
-  /* .buy:hover {
-    background-color: #9564aa;
-  }
-
-  .buy:hover ~ .buy-now {
-    background-color: #ffcf2d;
-    color: #000;
-  } */
-
   .credit-price {
     display: flex;
   }
@@ -283,8 +287,6 @@
     top: 98%;
     left: 61%;
     transform: translate(-50%, -48%);
-    width: 80%;
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;

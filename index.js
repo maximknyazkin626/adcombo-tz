@@ -30,7 +30,7 @@ slides.forEach((slide) => {
 });
 
 ///////////////Таймер////////////////////
-let totalTime = 10 * 60; // 10 минут в секундах
+let totalTime = 10 * 60;
 
 function startTimer() {
   let timeLeft = totalTime;
@@ -56,10 +56,10 @@ function startTimer() {
 
     // Проверяем, истекло ли время
     if (timeLeft < 0) {
-      clearInterval(interval); // Очищаем интервал
-      startTimer(); // Перезапускаем таймер
+      clearInterval(interval);
+      startTimer();
     }
-  }, 1000); // Обновляем каждую секунду
+  }, 1000);
 }
 
 // Запускаем таймер при загрузке страницы
