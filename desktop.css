@@ -273,6 +273,10 @@
     font-size: 13px;
   }
 
+  .second-section {
+    display: none;
+  }
+
   .second-section__list {
     position: absolute;
     top: 89%;
@@ -293,6 +297,7 @@
   }
 
   .second-section__list > li {
+    display: none;
     position: absolute;
     display: flex;
     justify-content: center;
