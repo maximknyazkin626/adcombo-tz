@@ -47,6 +47,10 @@
     font-size: 16px;
   }
 
+  .menu-point:hover {
+    color: #65307c;
+  }
+
   .menu-point_premium {
     display: flex;
     align-items: center;
@@ -60,7 +64,17 @@
   }
 
   .main {
-    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .main-background {
+    width: 100%;
+    height: auto;
+    background-image: url("/images/bubble-left.png"),
+      url("/images/bubble-right.png");
+    background-size: 50% 100%;
+    background-position: left top, right top;
+    background-repeat: no-repeat;
   }
 
   .main-wrapper {
@@ -75,9 +89,11 @@
     display: flex;
     flex-direction: column;
     width: 29%;
+    height: auto;
     background-color: #f4f0f7;
     border-radius: 10px;
     border: 2px solid #e1d4e8;
+    overflow: hidden;
   }
 
   .sidebar__account-info {
@@ -174,6 +190,7 @@
     margin: 0.9375rem 1.25rem 0.625rem;
     padding: 12px 10px;
     gap: 30px;
+    overflow: hidden;
   }
 
   .sale__title {
@@ -213,7 +230,7 @@
 
   .slider {
     flex-wrap: wrap;
-    
+
     justify-content: space-between;
   }
 
@@ -228,8 +245,8 @@
     min-width: 0;
     box-sizing: border-box;
     margin: 0.9375rem 1.25rem 0.625rem;
-    background-color: #F5F0F7;
-    border: 2px solid #9564AA;
+    background-color: #f5f0f7;
+    border: 2px solid #9564aa;
     align-items: center;
     justify-content: center;
     gap: 11px;
@@ -238,6 +255,8 @@
 
   .offer {
     display: none;
+    left: 10%;
+    top: -10%;
   }
 
   .buy-now {
@@ -246,23 +265,13 @@
     font-family: var(--ubuntu);
     font-weight: 500;
     padding: 17px 28px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 5px;
-    color: #D2D2D2;
+    color: #d2d2d2;
   }
-
-  /* .buy:hover{
-    background-color: #9564AA;
-  } */
-
-  /* .buy:hover ~ .buy-now{
-    background-color: #ffcf2d;
-    color: #000;
-  } */
 
   .credit-price {
     display: flex;
-
   }
 
   .price {
@@ -279,11 +288,9 @@
 
   .second-section__list {
     position: absolute;
-    top: 89%;
-    left: 58%;
+    top: 98%;
+    left: 61%;
     transform: translate(-50%, -48%);
-    width: 80%;
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,11 +328,9 @@
     display: block;
     transform: translate(-200px, -50px);
   }
-  
+
   .second-section__list > li:nth-child(6) {
     display: block;
     transform: translate(-110px, -140px);
   }
-  
-  
 }
