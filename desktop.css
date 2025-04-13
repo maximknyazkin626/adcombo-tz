@@ -70,8 +70,8 @@
   .main-background {
     width: 100%;
     height: 770px;
-    background-image: url("/images/bubble-left.png"),
-      url("/images/bubble-right.png");
+    background-image: url("images/bubble-left.png"),
+      url("images/bubble-right.png");
     background-size: 50% 100%;
     background-position: left top, right top;
     background-repeat: no-repeat;
